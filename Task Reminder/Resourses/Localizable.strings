@@ -1,0 +1,88 @@
+/* 
+  Localizable.strings
+  Task Reminder
+
+  Created by Рамил Гаджиев on 26.03.2022.
+  
+*/
+
+/* Alert Titles */
+"alert_t_error"                                 = "Ошибка";
+"alert_t_pin_code"                              = "Задать Пин-код?";
+"alert_t_task_done"                             = "Задача выполнена?";
+"alert_t_task_not_done"                         = "Задача еще в работе?";
+
+/* Alert Message */
+"alert_m_dont_create_pin_code"                  = "Не удалось создать пин-код";
+"alert_m_use_pin_code"                          = "Хотите ли Вы осуществлять вход в приложение при помощи Пин-кода?";
+"alert_m_task_done"                             = "выполнил поставленную задачу?";
+"alert_m_task_not_done"                         = "не выполнил поставленную задачу?";
+
+/* Alerts Action */
+"alert_a_ok"                                    = "ОК";
+"alert_a_no"                                    = "Нет";
+"alert_a_yes"                                   = "Да";
+
+/* Push Notification */
+"remind"                                        = "Напоминание";
+"remind_check_tasks"                            = "Проверьте Ваши задачи";
+"remind_after_10_min"                           = "Напомнить через 10 минут";
+"remind_after_hour"                             = "Напомнить через час";
+"notif_close"                                   = "Закрыть";
+"notif_close"                                   = "Закрыть";
+"notif_close"                                   = "Закрыть";
+
+/* Buttons */
+"b_forgot_code"                                 = "Забыли \nкод?";
+"b_next"                                        = "Далее";
+
+/* Title Input */
+"iv_email"                                      = "E-mail";
+"iv_password"                                   = "Пароль";
+
+/* Input Errors */
+"iv_invalid_data_format"                        = "Неверный формат данных";
+"iv_invalid_password"                           = "Короткий пароль";
+"iv_invalid_data"                               = "Неверные данные";
+
+/* TabBar Items */
+"tab_main"                                      = "Активные";
+"tab_done_tasks"                                = "Выполненные";
+"some2"                                         = "Не придумал";
+"tab_support"                                   = "Поддержка";
+
+/* Pin Code VC */
+"t_pin_code"                                    = "Пин-код";
+"come_up_pin_code"                              = "Придумайте код";
+"repeat_pin_code"                               = "Повторите код";
+"enter_pin"                                     = "Введите код";
+"enter_pin_inof"                                = "Вы будете вводить его при входе \nв приложение";
+"enter_pin_with_error"                          = "Пин-коды не совпадают";
+"title_biometry"                                = "Биометрия";
+"message_biometry"                              = "Хотите ли вы осуществлять вход в приложение с помощью";
+
+/* Home VC */
+"t_home"                                        = "Активные задачи";
+"time_is_up"                                    = "Время вышло";
+"remaining"                                     = "Осталось";
+"l_with_time"                                   = "Со временем";
+"l_without_time"                                = "Без времени";
+
+/* AddTask VC */
+"t_add_task"                                    = "Добавить задачу";
+"b_add_task"                                    = "Добавить задачу";
+"receiver_name"                                 = "Введите имя";
+"task_name"                                     = "Опишите задачу";
+"task_end_time"                                 = "Время окончания задачи";
+"t_task_done"                                   = "Исполнитель выполнил задачу";
+
+/* EditTask VC */
+"t_edit_task"                                   = "Изменить задачу";
+"b_edit_task"                                   = "Изменить";
+
+/* DoneTask VC */
+"l_finished"                                    = "Выполнено";
+"l_executor"                                    = "Исполнитель";
+"l_task"                                        = "Задача";
+"clear"                                         = "Очистить";
+

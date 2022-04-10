@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CeraPro-Bold.ttf">
+            <string>CeraPro-Bold</string>
+        </array>
+        <array key="CeraPro-Medium.ttf">
+            <string>CeraPro-Medium</string>
+        </array>
+        <array key="CeraPro-Regular.ttf">
+            <string>CeraPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="b5h-Ze-szU" customClass="InputFieldView" customModule="Task_Reminder" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="942" height="374"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="6c2-qh-hhx">
+                    <rect key="frame" x="0.0" y="0.0" width="942" height="152"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sm8-r4-OHv">
+                            <rect key="frame" x="0.0" y="0.0" width="942" height="50"/>
+                            <fontDescription key="fontDescription" name="CeraPro-Regular" family="Cera Pro" pointSize="0.0"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1nx-qx-lmd">
+                            <rect key="frame" x="0.0" y="54" width="942" height="44"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tsk-nr-wuj">
+                                    <rect key="frame" x="0.0" y="0.0" width="942" height="44"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AJT-Rs-pKi" userLabel="LeftEmptyView">
+                                            <rect key="frame" x="0.0" y="0.0" width="10" height="44"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="10" id="90w-jI-Zf2"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="exX-sg-lus">
+                                            <rect key="frame" x="10" y="0.0" width="898" height="44"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ppw-kE-ID9">
+                                                    <rect key="frame" x="0.0" y="0.0" width="898" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="f18-RX-lgy"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="CeraPro-Bold" family="Cera Pro" pointSize="0.0"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="Ppw-kE-ID9" firstAttribute="top" secondItem="exX-sg-lus" secondAttribute="top" id="JEr-7F-gJ0"/>
+                                                <constraint firstAttribute="bottom" secondItem="Ppw-kE-ID9" secondAttribute="bottom" id="NPV-eb-o78"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ppw-kE-ID9" secondAttribute="trailing" id="exC-Ll-ucl"/>
+                                                <constraint firstItem="Ppw-kE-ID9" firstAttribute="leading" secondItem="exX-sg-lus" secondAttribute="leading" id="fAL-hB-1wD"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2L6-Rt-zcZ" userLabel="ActionView">
+                                            <rect key="frame" x="908" y="0.0" width="24" height="44"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYs-MK-R9p" customClass="ActionButton" customModule="Task_Reminder" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="10" width="24" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="24" id="0BF-vV-M0i"/>
+                                                        <constraint firstAttribute="height" constant="24" id="V2I-cF-GbL"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" image="clear"/>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="cYs-MK-R9p" firstAttribute="centerX" secondItem="2L6-Rt-zcZ" secondAttribute="centerX" id="P0D-kg-sic"/>
+                                                <constraint firstItem="cYs-MK-R9p" firstAttribute="centerY" secondItem="2L6-Rt-zcZ" secondAttribute="centerY" id="p08-TT-Ouz"/>
+                                                <constraint firstAttribute="width" constant="24" id="qxW-cX-1mW"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W4G-lv-sRk" userLabel="RightEmptyView">
+                                            <rect key="frame" x="932" y="0.0" width="10" height="44"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="10" id="9Qw-dH-jOn"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Tsk-nr-wuj" secondAttribute="trailing" id="3tD-VL-ja2"/>
+                                <constraint firstItem="Tsk-nr-wuj" firstAttribute="leading" secondItem="1nx-qx-lmd" secondAttribute="leading" id="HLu-1g-i7g"/>
+                                <constraint firstItem="Tsk-nr-wuj" firstAttribute="top" secondItem="1nx-qx-lmd" secondAttribute="top" id="M9E-Po-Tmc"/>
+                                <constraint firstAttribute="bottom" secondItem="Tsk-nr-wuj" secondAttribute="bottom" id="m78-0I-c6j"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOq-t1-Xx4">
+                            <rect key="frame" x="0.0" y="102" width="942" height="50"/>
+                            <fontDescription key="fontDescription" name="CeraPro-Medium" family="Cera Pro" pointSize="0.0"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="nLn-sC-uhD"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="6c2-qh-hhx" firstAttribute="top" secondItem="b5h-Ze-szU" secondAttribute="top" id="Elk-0J-dyi"/>
+                <constraint firstItem="6c2-qh-hhx" firstAttribute="leading" secondItem="nLn-sC-uhD" secondAttribute="leading" id="KMb-gy-N6b"/>
+                <constraint firstItem="nLn-sC-uhD" firstAttribute="trailing" secondItem="6c2-qh-hhx" secondAttribute="trailing" id="g6z-1z-jF2"/>
+                <constraint firstItem="nLn-sC-uhD" firstAttribute="bottom" secondItem="6c2-qh-hhx" secondAttribute="bottom" priority="240" id="noN-io-0FT"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="actionButton" destination="cYs-MK-R9p" id="0lg-G5-g7x"/>
+                <outlet property="descriptLbl" destination="wOq-t1-Xx4" id="6oZ-1F-JZ4"/>
+                <outlet property="infoView" destination="2L6-Rt-zcZ" id="p5L-me-YOx"/>
+                <outlet property="stackView" destination="6c2-qh-hhx" id="aHR-iv-tBS"/>
+                <outlet property="textFContainerView" destination="1nx-qx-lmd" id="Rn9-0s-Gzd"/>
+                <outlet property="textField" destination="Ppw-kE-ID9" id="U3U-zl-SeO"/>
+                <outlet property="titleLbl" destination="Sm8-r4-OHv" id="KUt-TG-Qgn"/>
+            </connections>
+            <point key="canvasLocation" x="-450.72463768115944" y="291.96428571428572"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="clear" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

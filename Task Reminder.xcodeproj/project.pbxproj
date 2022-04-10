@@ -7,25 +7,259 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0308760627F07F6F0070C3D6 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0308760527F07F6F0070C3D6 /* UserManager.swift */; };
 		031DB16D27EEEBFD0020FF98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB16C27EEEBFD0020FF98 /* AppDelegate.swift */; };
 		031DB16F27EEEBFD0020FF98 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB16E27EEEBFD0020FF98 /* SceneDelegate.swift */; };
-		031DB17127EEEBFD0020FF98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB17027EEEBFD0020FF98 /* ViewController.swift */; };
-		031DB17427EEEBFD0020FF98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 031DB17227EEEBFD0020FF98 /* Main.storyboard */; };
 		031DB17727EEEBFD0020FF98 /* Task_Reminder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 031DB17527EEEBFD0020FF98 /* Task_Reminder.xcdatamodeld */; };
 		031DB17927EEEC010020FF98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 031DB17827EEEC010020FF98 /* Assets.xcassets */; };
 		031DB17C27EEEC010020FF98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 031DB17A27EEEC010020FF98 /* LaunchScreen.storyboard */; };
+		031DB18727EEF0390020FF98 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB18627EEF0390020FF98 /* TabBarViewController.swift */; };
+		031DB18A27EEF10F0020FF98 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB18927EEF10F0020FF98 /* BaseNavigationController.swift */; };
+		031DB18E27EEFA030020FF98 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 031DB18D27EEFA030020FF98 /* Localizable.strings */; };
+		031DB19A27EF04BD0020FF98 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB19827EF04BD0020FF98 /* Router.swift */; };
+		031DB19B27EF04BD0020FF98 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB19927EF04BD0020FF98 /* BaseCoordinator.swift */; };
+		031DB1A127EF04EC0020FF98 /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB19D27EF04EC0020FF98 /* Routable.swift */; };
+		031DB1A227EF04EC0020FF98 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB19E27EF04EC0020FF98 /* Presentable.swift */; };
+		031DB1A327EF04EC0020FF98 /* Coordinatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB19F27EF04EC0020FF98 /* Coordinatable.swift */; };
+		031DB1A427EF04EC0020FF98 /* BaseViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB1A027EF04EC0020FF98 /* BaseViewProtocol.swift */; };
+		031DB1A927EF055F0020FF98 /* CoordinatorFactoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB1A727EF055F0020FF98 /* CoordinatorFactoryProtocol.swift */; };
+		031DB1AA27EF055F0020FF98 /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB1A827EF055F0020FF98 /* CoordinatorFactory.swift */; };
+		031DB1C327EF05690020FF98 /* PinCodeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB1B327EF05690020FF98 /* PinCodeFactory.swift */; };
+		031DB1C427EF05690020FF98 /* ModulesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB1B427EF05690020FF98 /* ModulesFactory.swift */; };
+		031DB1CE27EF0B050020FF98 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB1CD27EF0B050020FF98 /* SessionManager.swift */; };
+		031DB1D027EF0EF90020FF98 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB1CF27EF0EF90020FF98 /* UserDefaultsKeys.swift */; };
+		031DB1D227EF13200020FF98 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB1D127EF13200020FF98 /* AppCoordinator.swift */; };
+		031DB1D427EF13270020FF98 /* TaskReminderCoordinators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB1D327EF13270020FF98 /* TaskReminderCoordinators.swift */; };
+		031DB1D927EF13870020FF98 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB1D627EF13860020FF98 /* TabBarCoordinator.swift */; };
+		031DB1DA27EF13870020FF98 /* TabBarCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB1D727EF13860020FF98 /* TabBarCoordinatorOutput.swift */; };
+		031DB1ED27EF28E80020FF98 /* PinCodeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB1DE27EF28E80020FF98 /* PinCodeInteractor.swift */; };
+		031DB1EE27EF28E80020FF98 /* PinCodeViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB1DF27EF28E80020FF98 /* PinCodeViewProtocol.swift */; };
+		031DB1EF27EF28E80020FF98 /* PinCodePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB1E027EF28E80020FF98 /* PinCodePresenter.swift */; };
+		031DB1F027EF28E80020FF98 /* PinCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB1E127EF28E80020FF98 /* PinCodeViewController.swift */; };
+		031DB1F127EF28E80020FF98 /* PinCodeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB1E227EF28E80020FF98 /* PinCodeAssembly.swift */; };
+		031DB1F227EF28E80020FF98 /* PinCodeCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB1E327EF28E80020FF98 /* PinCodeCoordinatorOutput.swift */; };
+		031DB1F327EF28E80020FF98 /* PinCodeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB1E527EF28E80020FF98 /* PinCodeItem.swift */; };
+		031DB1F427EF28E80020FF98 /* SetPinCodeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB1E727EF28E80020FF98 /* SetPinCodeInteractor.swift */; };
+		031DB1F527EF28E80020FF98 /* SetPinCodeViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB1E827EF28E80020FF98 /* SetPinCodeViewProtocol.swift */; };
+		031DB1F627EF28E80020FF98 /* SetPinCodeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB1E927EF28E80020FF98 /* SetPinCodeAssembly.swift */; };
+		031DB1F727EF28E80020FF98 /* SetPinCodePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB1EA27EF28E80020FF98 /* SetPinCodePresenter.swift */; };
+		031DB1F827EF28E80020FF98 /* SetPinCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB1EB27EF28E80020FF98 /* SetPinCodeViewController.swift */; };
+		031DB1F927EF28E80020FF98 /* PinCodeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB1EC27EF28E80020FF98 /* PinCodeCoordinator.swift */; };
+		031DB1FC27EF296C0020FF98 /* Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB1FB27EF296C0020FF98 /* Blocks.swift */; };
+		031DB1FE27EF29F00020FF98 /* NavigationItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB1FD27EF29F00020FF98 /* NavigationItemManager.swift */; };
+		031DB20127EF2A9A0020FF98 /* BasePresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB20027EF2A9A0020FF98 /* BasePresenterOutput.swift */; };
+		031DB20327EF2B840020FF98 /* PinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB20227EF2B840020FF98 /* PinManager.swift */; };
+		031DB20C27EF2C890020FF98 /* BiometricAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB20627EF2C890020FF98 /* BiometricAuth.swift */; };
+		031DB20D27EF2C890020FF98 /* RNCryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB20827EF2C890020FF98 /* RNCryptor.swift */; };
+		031DB20E27EF2C890020FF98 /* PinCodeAuthEncryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB20927EF2C890020FF98 /* PinCodeAuthEncryption.swift */; };
+		031DB20F27EF2C890020FF98 /* PinCodeAuthKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB20A27EF2C890020FF98 /* PinCodeAuthKeychain.swift */; };
+		031DB21027EF2C890020FF98 /* PinCodeAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB20B27EF2C890020FF98 /* PinCodeAuth.swift */; };
+		031DB21227EF2DCC0020FF98 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB21127EF2DCC0020FF98 /* BaseViewController.swift */; };
+		031DB22027EF341A0020FF98 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB21F27EF341A0020FF98 /* String+Extensions.swift */; };
+		031DB22527EF3DB50020FF98 /* PinCodeInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB22227EF3DB50020FF98 /* PinCodeInputView.swift */; };
+		031DB22627EF3DB50020FF98 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB22327EF3DB50020FF98 /* KeyboardView.swift */; };
+		031DB22727EF3DB50020FF98 /* DigitKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB22427EF3DB50020FF98 /* DigitKeyView.swift */; };
+		031DB22927EF406D0020FF98 /* DialogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB22827EF406D0020FF98 /* DialogModel.swift */; };
+		031DB22C27EF41D90020FF98 /* TaskPinMessageLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB22B27EF41D80020FF98 /* TaskPinMessageLabel.swift */; };
+		031DB22E27EF43110020FF98 /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB22D27EF43110020FF98 /* UIStackView+Extension.swift */; };
+		031DB23027EF431C0020FF98 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB22F27EF431C0020FF98 /* UIView+Extensions.swift */; };
+		031DB23227EF47D00020FF98 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB23127EF47D00020FF98 /* Helper.swift */; };
+		031DB23427EF48F60020FF98 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB23327EF48F60020FF98 /* UIViewController+Extensions.swift */; };
+		031DB23D27EF5BEA0020FF98 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB23527EF5BEA0020FF98 /* HomeCoordinator.swift */; };
+		031DB23E27EF5BEA0020FF98 /* HomeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB23627EF5BEA0020FF98 /* HomeFactory.swift */; };
+		031DB23F27EF5BEA0020FF98 /* HomeCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB23727EF5BEA0020FF98 /* HomeCoordinatorOutput.swift */; };
+		031DB24027EF5BEA0020FF98 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB23827EF5BEA0020FF98 /* HomePresenter.swift */; };
+		031DB24127EF5BEA0020FF98 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB23927EF5BEA0020FF98 /* HomeViewController.swift */; };
+		031DB24227EF5BEA0020FF98 /* HomeAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB23A27EF5BEA0020FF98 /* HomeAssembly.swift */; };
+		031DB24327EF5BEA0020FF98 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB23B27EF5BEA0020FF98 /* HomeInteractor.swift */; };
+		031DB24427EF5BEA0020FF98 /* HomeViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031DB23C27EF5BEA0020FF98 /* HomeViewProtocol.swift */; };
+		0358BF0827FCB25D00AA954A /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0358BF0727FCB25D00AA954A /* NotificationManager.swift */; };
+		0358BF0A27FCB33000AA954A /* done_image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0358BF0927FCB33000AA954A /* done_image.jpeg */; };
+		0358BF1427FCC08600AA954A /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0358BF0C27FCC08600AA954A /* AuthCoordinator.swift */; };
+		0358BF1527FCC08600AA954A /* AuthFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0358BF0D27FCC08600AA954A /* AuthFactory.swift */; };
+		0358BF1627FCC08600AA954A /* AuthCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0358BF0E27FCC08600AA954A /* AuthCoordinatorOutput.swift */; };
+		0358BF1727FCC08600AA954A /* AuthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0358BF0F27FCC08600AA954A /* AuthPresenter.swift */; };
+		0358BF1827FCC08600AA954A /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0358BF1027FCC08600AA954A /* AuthViewController.swift */; };
+		0358BF1927FCC08600AA954A /* AuthAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0358BF1127FCC08600AA954A /* AuthAssembly.swift */; };
+		0358BF1A27FCC08600AA954A /* AuthInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0358BF1227FCC08600AA954A /* AuthInteractor.swift */; };
+		0358BF1B27FCC08600AA954A /* AuthViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0358BF1327FCC08600AA954A /* AuthViewProtocol.swift */; };
+		039832EB27FB6A8500B08133 /* BlockingActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039832EA27FB6A8500B08133 /* BlockingActivityIndicator.swift */; };
+		039832ED27FB6A9200B08133 /* KeyboardNotificationsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039832EC27FB6A9200B08133 /* KeyboardNotificationsProtocol.swift */; };
+		039832EF27FB6A9E00B08133 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039832EE27FB6A9E00B08133 /* BaseView.swift */; };
+		039832F127FB6AA800B08133 /* ActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039832F027FB6AA800B08133 /* ActionButton.swift */; };
+		039F073E27FF678700BDB100 /* InputFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039F073C27FF678600BDB100 /* InputFieldView.swift */; };
+		039F073F27FF678700BDB100 /* InputFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 039F073D27FF678700BDB100 /* InputFieldView.xib */; };
+		039F074127FF6B4E00BDB100 /* InputSummFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039F074027FF6B4E00BDB100 /* InputSummFieldView.swift */; };
+		039F074427FF8C0E00BDB100 /* WithCheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039F074327FF8C0E00BDB100 /* WithCheckBoxView.swift */; };
+		039F07462801C14100BDB100 /* TaskCellModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039F07452801C14100BDB100 /* TaskCellModelDelegate.swift */; };
+		039F07502802D84500BDB100 /* DoneTasksCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039F07482802D84500BDB100 /* DoneTasksCoordinator.swift */; };
+		039F07512802D84500BDB100 /* DoneTasksFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039F07492802D84500BDB100 /* DoneTasksFactory.swift */; };
+		039F07522802D84500BDB100 /* DoneTasksCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039F074A2802D84500BDB100 /* DoneTasksCoordinatorOutput.swift */; };
+		039F07532802D84500BDB100 /* DoneTasksPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039F074B2802D84500BDB100 /* DoneTasksPresenter.swift */; };
+		039F07542802D84500BDB100 /* DoneTasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039F074C2802D84500BDB100 /* DoneTasksViewController.swift */; };
+		039F07552802D84500BDB100 /* DoneTasksAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039F074D2802D84500BDB100 /* DoneTasksAssembly.swift */; };
+		039F07562802D84500BDB100 /* DoneTasksInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039F074E2802D84500BDB100 /* DoneTasksInteractor.swift */; };
+		039F07572802D84500BDB100 /* DoneTasksViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039F074F2802D84500BDB100 /* DoneTasksViewProtocol.swift */; };
+		039F075A2802DB4100BDB100 /* DoneTasksViewController+TVDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039F07592802DB4100BDB100 /* DoneTasksViewController+TVDelegate.swift */; };
+		039F075C2802DB5300BDB100 /* DoneTasksViewController+TVDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039F075B2802DB5300BDB100 /* DoneTasksViewController+TVDataSource.swift */; };
+		039F07612802DBF800BDB100 /* DoneTaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039F07602802DBF800BDB100 /* DoneTaskTableViewCell.swift */; };
+		039F07632802DC0D00BDB100 /* DoneTaskCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039F07622802DC0D00BDB100 /* DoneTaskCellModel.swift */; };
+		039F07652802DC1D00BDB100 /* DoneTaskCellModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039F07642802DC1D00BDB100 /* DoneTaskCellModelDelegate.swift */; };
+		039F076928032A0D00BDB100 /* CDTaskModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039F076828032A0D00BDB100 /* CDTaskModel+CoreDataProperties.swift */; };
+		039F076A28032A0D00BDB100 /* CDTaskModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039F076728032A0D00BDB100 /* CDTaskModel+CoreDataClass.swift */; };
+		03B7AD8C27FA202B005D5D17 /* EditTaskPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B7AD8727FA202B005D5D17 /* EditTaskPresenter.swift */; };
+		03B7AD8D27FA202B005D5D17 /* EditTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B7AD8827FA202B005D5D17 /* EditTaskViewController.swift */; };
+		03B7AD8E27FA202B005D5D17 /* EditTaskAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B7AD8927FA202B005D5D17 /* EditTaskAssembly.swift */; };
+		03B7AD8F27FA202B005D5D17 /* EditTaskInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B7AD8A27FA202B005D5D17 /* EditTaskInteractor.swift */; };
+		03B7AD9027FA202B005D5D17 /* EditTaskViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B7AD8B27FA202B005D5D17 /* EditTaskViewProtocol.swift */; };
+		03B8545827F841FF0048C713 /* AddTaskPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8545327F841FF0048C713 /* AddTaskPresenter.swift */; };
+		03B8545927F841FF0048C713 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8545427F841FF0048C713 /* AddTaskViewController.swift */; };
+		03B8545A27F842000048C713 /* AddTaskAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8545527F841FF0048C713 /* AddTaskAssembly.swift */; };
+		03B8545B27F842000048C713 /* AddTaskInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8545627F841FF0048C713 /* AddTaskInteractor.swift */; };
+		03B8545C27F842000048C713 /* AddTaskViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8545727F841FF0048C713 /* AddTaskViewProtocol.swift */; };
+		03B8545F27F8A6090048C713 /* TextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8545E27F8A6090048C713 /* TextInputView.swift */; };
+		03B8546227F8C0A60048C713 /* MainCornersButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8546127F8C0A60048C713 /* MainCornersButton.swift */; };
+		03B8546427F980CF0048C713 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8546327F980CF0048C713 /* UITextField+Extensions.swift */; };
+		03B8546627F983ED0048C713 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8546527F983ED0048C713 /* Formatter.swift */; };
+		03B8546C27F99EB30048C713 /* TaskFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B8546B27F99EB30048C713 /* TaskFieldType.swift */; };
+		03FA051C27F3AA9100C7957D /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FA051B27F3AA9100C7957D /* CoreDataManager.swift */; };
+		03FA051F27F3ADF200C7957D /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FA051E27F3ADF200C7957D /* TaskModel.swift */; };
+		03FA052227F4EB4700C7957D /* HomeViewController + TVDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FA052127F4EB4700C7957D /* HomeViewController + TVDelegate.swift */; };
+		03FA052427F4EB6300C7957D /* HomeViewController+TVDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FA052327F4EB6300C7957D /* HomeViewController+TVDataSource.swift */; };
+		03FA052B27F4EE3300C7957D /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FA052827F4EE3300C7957D /* TaskTableViewCell.swift */; };
+		03FA052C27F4EE3300C7957D /* TaskCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FA052927F4EE3300C7957D /* TaskCellModel.swift */; };
+		03FA052F27F4FFF700C7957D /* TimeInterval+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FA052E27F4FFF700C7957D /* TimeInterval+Extensions.swift */; };
+		AB20A0245EE1CF5DC2116E04 /* Pods_Task_Reminder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C94C7E73C38B90634D9BCD5 /* Pods_Task_Reminder.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0308760527F07F6F0070C3D6 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		031DB16927EEEBFD0020FF98 /* Task Reminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Task Reminder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		031DB16C27EEEBFD0020FF98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		031DB16E27EEEBFD0020FF98 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		031DB17027EEEBFD0020FF98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		031DB17327EEEBFD0020FF98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		031DB17627EEEBFD0020FF98 /* Task_Reminder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Task_Reminder.xcdatamodel; sourceTree = "<group>"; };
 		031DB17827EEEC010020FF98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		031DB17B27EEEC010020FF98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		031DB17D27EEEC010020FF98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		031DB18627EEF0390020FF98 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarViewController.swift; path = "Task Reminder/Modules/TabBarViewController.swift"; sourceTree = SOURCE_ROOT; };
+		031DB18927EEF10F0020FF98 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		031DB18D27EEFA030020FF98 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		031DB19827EF04BD0020FF98 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		031DB19927EF04BD0020FF98 /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		031DB19D27EF04EC0020FF98 /* Routable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
+		031DB19E27EF04EC0020FF98 /* Presentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		031DB19F27EF04EC0020FF98 /* Coordinatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinatable.swift; sourceTree = "<group>"; };
+		031DB1A027EF04EC0020FF98 /* BaseViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewProtocol.swift; sourceTree = "<group>"; };
+		031DB1A727EF055F0020FF98 /* CoordinatorFactoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorFactoryProtocol.swift; sourceTree = "<group>"; };
+		031DB1A827EF055F0020FF98 /* CoordinatorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
+		031DB1B327EF05690020FF98 /* PinCodeFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinCodeFactory.swift; sourceTree = "<group>"; };
+		031DB1B427EF05690020FF98 /* ModulesFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModulesFactory.swift; sourceTree = "<group>"; };
+		031DB1CD27EF0B050020FF98 /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		031DB1CF27EF0EF90020FF98 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
+		031DB1D127EF13200020FF98 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		031DB1D327EF13270020FF98 /* TaskReminderCoordinators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskReminderCoordinators.swift; sourceTree = "<group>"; };
+		031DB1D627EF13860020FF98 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		031DB1D727EF13860020FF98 /* TabBarCoordinatorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarCoordinatorOutput.swift; sourceTree = "<group>"; };
+		031DB1DE27EF28E80020FF98 /* PinCodeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinCodeInteractor.swift; sourceTree = "<group>"; };
+		031DB1DF27EF28E80020FF98 /* PinCodeViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinCodeViewProtocol.swift; sourceTree = "<group>"; };
+		031DB1E027EF28E80020FF98 /* PinCodePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinCodePresenter.swift; sourceTree = "<group>"; };
+		031DB1E127EF28E80020FF98 /* PinCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinCodeViewController.swift; sourceTree = "<group>"; };
+		031DB1E227EF28E80020FF98 /* PinCodeAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinCodeAssembly.swift; sourceTree = "<group>"; };
+		031DB1E327EF28E80020FF98 /* PinCodeCoordinatorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinCodeCoordinatorOutput.swift; sourceTree = "<group>"; };
+		031DB1E527EF28E80020FF98 /* PinCodeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinCodeItem.swift; sourceTree = "<group>"; };
+		031DB1E727EF28E80020FF98 /* SetPinCodeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPinCodeInteractor.swift; sourceTree = "<group>"; };
+		031DB1E827EF28E80020FF98 /* SetPinCodeViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPinCodeViewProtocol.swift; sourceTree = "<group>"; };
+		031DB1E927EF28E80020FF98 /* SetPinCodeAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPinCodeAssembly.swift; sourceTree = "<group>"; };
+		031DB1EA27EF28E80020FF98 /* SetPinCodePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPinCodePresenter.swift; sourceTree = "<group>"; };
+		031DB1EB27EF28E80020FF98 /* SetPinCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPinCodeViewController.swift; sourceTree = "<group>"; };
+		031DB1EC27EF28E80020FF98 /* PinCodeCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinCodeCoordinator.swift; sourceTree = "<group>"; };
+		031DB1FB27EF296C0020FF98 /* Blocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blocks.swift; sourceTree = "<group>"; };
+		031DB1FD27EF29F00020FF98 /* NavigationItemManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationItemManager.swift; sourceTree = "<group>"; };
+		031DB20027EF2A9A0020FF98 /* BasePresenterOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePresenterOutput.swift; sourceTree = "<group>"; };
+		031DB20227EF2B840020FF98 /* PinManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinManager.swift; sourceTree = "<group>"; };
+		031DB20627EF2C890020FF98 /* BiometricAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BiometricAuth.swift; sourceTree = "<group>"; };
+		031DB20827EF2C890020FF98 /* RNCryptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNCryptor.swift; sourceTree = "<group>"; };
+		031DB20927EF2C890020FF98 /* PinCodeAuthEncryption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinCodeAuthEncryption.swift; sourceTree = "<group>"; };
+		031DB20A27EF2C890020FF98 /* PinCodeAuthKeychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinCodeAuthKeychain.swift; sourceTree = "<group>"; };
+		031DB20B27EF2C890020FF98 /* PinCodeAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinCodeAuth.swift; sourceTree = "<group>"; };
+		031DB21127EF2DCC0020FF98 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		031DB21F27EF341A0020FF98 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		031DB22227EF3DB50020FF98 /* PinCodeInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinCodeInputView.swift; sourceTree = "<group>"; };
+		031DB22327EF3DB50020FF98 /* KeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		031DB22427EF3DB50020FF98 /* DigitKeyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DigitKeyView.swift; sourceTree = "<group>"; };
+		031DB22827EF406D0020FF98 /* DialogModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogModel.swift; sourceTree = "<group>"; };
+		031DB22B27EF41D80020FF98 /* TaskPinMessageLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskPinMessageLabel.swift; sourceTree = "<group>"; };
+		031DB22D27EF43110020FF98 /* UIStackView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
+		031DB22F27EF431C0020FF98 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		031DB23127EF47D00020FF98 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		031DB23327EF48F60020FF98 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		031DB23527EF5BEA0020FF98 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		031DB23627EF5BEA0020FF98 /* HomeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFactory.swift; sourceTree = "<group>"; };
+		031DB23727EF5BEA0020FF98 /* HomeCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinatorOutput.swift; sourceTree = "<group>"; };
+		031DB23827EF5BEA0020FF98 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		031DB23927EF5BEA0020FF98 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		031DB23A27EF5BEA0020FF98 /* HomeAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAssembly.swift; sourceTree = "<group>"; };
+		031DB23B27EF5BEA0020FF98 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		031DB23C27EF5BEA0020FF98 /* HomeViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewProtocol.swift; sourceTree = "<group>"; };
+		0358BF0727FCB25D00AA954A /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		0358BF0927FCB33000AA954A /* done_image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = done_image.jpeg; sourceTree = "<group>"; };
+		0358BF0C27FCC08600AA954A /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		0358BF0D27FCC08600AA954A /* AuthFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFactory.swift; sourceTree = "<group>"; };
+		0358BF0E27FCC08600AA954A /* AuthCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinatorOutput.swift; sourceTree = "<group>"; };
+		0358BF0F27FCC08600AA954A /* AuthPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthPresenter.swift; sourceTree = "<group>"; };
+		0358BF1027FCC08600AA954A /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		0358BF1127FCC08600AA954A /* AuthAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAssembly.swift; sourceTree = "<group>"; };
+		0358BF1227FCC08600AA954A /* AuthInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInteractor.swift; sourceTree = "<group>"; };
+		0358BF1327FCC08600AA954A /* AuthViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewProtocol.swift; sourceTree = "<group>"; };
+		039832EA27FB6A8500B08133 /* BlockingActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockingActivityIndicator.swift; sourceTree = "<group>"; };
+		039832EC27FB6A9200B08133 /* KeyboardNotificationsProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardNotificationsProtocol.swift; sourceTree = "<group>"; };
+		039832EE27FB6A9E00B08133 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		039832F027FB6AA800B08133 /* ActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionButton.swift; sourceTree = "<group>"; };
+		039F073C27FF678600BDB100 /* InputFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputFieldView.swift; sourceTree = "<group>"; };
+		039F073D27FF678700BDB100 /* InputFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputFieldView.xib; sourceTree = "<group>"; };
+		039F074027FF6B4E00BDB100 /* InputSummFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputSummFieldView.swift; sourceTree = "<group>"; };
+		039F074327FF8C0E00BDB100 /* WithCheckBoxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WithCheckBoxView.swift; sourceTree = "<group>"; };
+		039F07452801C14100BDB100 /* TaskCellModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellModelDelegate.swift; sourceTree = "<group>"; };
+		039F07482802D84500BDB100 /* DoneTasksCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneTasksCoordinator.swift; sourceTree = "<group>"; };
+		039F07492802D84500BDB100 /* DoneTasksFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneTasksFactory.swift; sourceTree = "<group>"; };
+		039F074A2802D84500BDB100 /* DoneTasksCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneTasksCoordinatorOutput.swift; sourceTree = "<group>"; };
+		039F074B2802D84500BDB100 /* DoneTasksPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneTasksPresenter.swift; sourceTree = "<group>"; };
+		039F074C2802D84500BDB100 /* DoneTasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneTasksViewController.swift; sourceTree = "<group>"; };
+		039F074D2802D84500BDB100 /* DoneTasksAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneTasksAssembly.swift; sourceTree = "<group>"; };
+		039F074E2802D84500BDB100 /* DoneTasksInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneTasksInteractor.swift; sourceTree = "<group>"; };
+		039F074F2802D84500BDB100 /* DoneTasksViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneTasksViewProtocol.swift; sourceTree = "<group>"; };
+		039F07592802DB4100BDB100 /* DoneTasksViewController+TVDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DoneTasksViewController+TVDelegate.swift"; sourceTree = "<group>"; };
+		039F075B2802DB5300BDB100 /* DoneTasksViewController+TVDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DoneTasksViewController+TVDataSource.swift"; sourceTree = "<group>"; };
+		039F07602802DBF800BDB100 /* DoneTaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneTaskTableViewCell.swift; sourceTree = "<group>"; };
+		039F07622802DC0D00BDB100 /* DoneTaskCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneTaskCellModel.swift; sourceTree = "<group>"; };
+		039F07642802DC1D00BDB100 /* DoneTaskCellModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneTaskCellModelDelegate.swift; sourceTree = "<group>"; };
+		039F076728032A0D00BDB100 /* CDTaskModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CDTaskModel+CoreDataClass.swift"; path = "/Users/ramilgadziev/Desktop/Task Reminder/Task Reminder/Managers/CoreDataManager/CDTaskModel+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		039F076828032A0D00BDB100 /* CDTaskModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CDTaskModel+CoreDataProperties.swift"; path = "/Users/ramilgadziev/Desktop/Task Reminder/Task Reminder/Managers/CoreDataManager/CDTaskModel+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		03B7AD8727FA202B005D5D17 /* EditTaskPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskPresenter.swift; sourceTree = "<group>"; };
+		03B7AD8827FA202B005D5D17 /* EditTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskViewController.swift; sourceTree = "<group>"; };
+		03B7AD8927FA202B005D5D17 /* EditTaskAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskAssembly.swift; sourceTree = "<group>"; };
+		03B7AD8A27FA202B005D5D17 /* EditTaskInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskInteractor.swift; sourceTree = "<group>"; };
+		03B7AD8B27FA202B005D5D17 /* EditTaskViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTaskViewProtocol.swift; sourceTree = "<group>"; };
+		03B8545327F841FF0048C713 /* AddTaskPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskPresenter.swift; sourceTree = "<group>"; };
+		03B8545427F841FF0048C713 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		03B8545527F841FF0048C713 /* AddTaskAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskAssembly.swift; sourceTree = "<group>"; };
+		03B8545627F841FF0048C713 /* AddTaskInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskInteractor.swift; sourceTree = "<group>"; };
+		03B8545727F841FF0048C713 /* AddTaskViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewProtocol.swift; sourceTree = "<group>"; };
+		03B8545E27F8A6090048C713 /* TextInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputView.swift; sourceTree = "<group>"; };
+		03B8546127F8C0A60048C713 /* MainCornersButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCornersButton.swift; sourceTree = "<group>"; };
+		03B8546327F980CF0048C713 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		03B8546527F983ED0048C713 /* Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		03B8546B27F99EB30048C713 /* TaskFieldType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskFieldType.swift; sourceTree = "<group>"; };
+		03FA051B27F3AA9100C7957D /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		03FA051E27F3ADF200C7957D /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		03FA052127F4EB4700C7957D /* HomeViewController + TVDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController + TVDelegate.swift"; sourceTree = "<group>"; };
+		03FA052327F4EB6300C7957D /* HomeViewController+TVDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+TVDataSource.swift"; sourceTree = "<group>"; };
+		03FA052827F4EE3300C7957D /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		03FA052927F4EE3300C7957D /* TaskCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellModel.swift; sourceTree = "<group>"; };
+		03FA052E27F4FFF700C7957D /* TimeInterval+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Extensions.swift"; sourceTree = "<group>"; };
+		1C94C7E73C38B90634D9BCD5 /* Pods_Task_Reminder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Task_Reminder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70B1C7D797C4E53B129BB8BF /* Pods-Task Reminder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Task Reminder.debug.xcconfig"; path = "Target Support Files/Pods-Task Reminder/Pods-Task Reminder.debug.xcconfig"; sourceTree = "<group>"; };
+		81A0CE6E3BB9A4080ADC0D11 /* Pods-Task Reminder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Task Reminder.release.xcconfig"; path = "Target Support Files/Pods-Task Reminder/Pods-Task Reminder.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +267,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB20A0245EE1CF5DC2116E04 /* Pods_Task_Reminder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0111E6FE9F9812584FF12EAD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70B1C7D797C4E53B129BB8BF /* Pods-Task Reminder.debug.xcconfig */,
+				81A0CE6E3BB9A4080ADC0D11 /* Pods-Task Reminder.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		031DB16027EEEBFD0020FF98 = {
 			isa = PBXGroup;
 			children = (
+				0358BF0927FCB33000AA954A /* done_image.jpeg */,
 				031DB16B27EEEBFD0020FF98 /* Task Reminder */,
 				031DB16A27EEEBFD0020FF98 /* Products */,
+				0111E6FE9F9812584FF12EAD /* Pods */,
+				CAD4F91D0D8857E430362223 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +305,499 @@
 		031DB16B27EEEBFD0020FF98 /* Task Reminder */ = {
 			isa = PBXGroup;
 			children = (
-				031DB16C27EEEBFD0020FF98 /* AppDelegate.swift */,
-				031DB16E27EEEBFD0020FF98 /* SceneDelegate.swift */,
-				031DB17027EEEBFD0020FF98 /* ViewController.swift */,
-				031DB17227EEEBFD0020FF98 /* Main.storyboard */,
-				031DB17827EEEC010020FF98 /* Assets.xcassets */,
-				031DB17A27EEEC010020FF98 /* LaunchScreen.storyboard */,
-				031DB17D27EEEC010020FF98 /* Info.plist */,
-				031DB17527EEEBFD0020FF98 /* Task_Reminder.xcdatamodeld */,
+				031DB18327EEEF7E0020FF98 /* Application */,
+				031DB18527EEEFBA0020FF98 /* Resourses */,
+				031DB18F27EF038A0020FF98 /* Source */,
+				031DB1CC27EF0AE40020FF98 /* Managers */,
+				031DB20427EF2C390020FF98 /* Services */,
+				031DB1A527EF05380020FF98 /* Factories */,
+				031DB19627EF04690020FF98 /* Flows */,
 			);
 			path = "Task Reminder";
+			sourceTree = "<group>";
+		};
+		031DB18327EEEF7E0020FF98 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				031DB16C27EEEBFD0020FF98 /* AppDelegate.swift */,
+				031DB16E27EEEBFD0020FF98 /* SceneDelegate.swift */,
+				031DB17A27EEEC010020FF98 /* LaunchScreen.storyboard */,
+				031DB17527EEEBFD0020FF98 /* Task_Reminder.xcdatamodeld */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		031DB18527EEEFBA0020FF98 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				031DB17827EEEC010020FF98 /* Assets.xcassets */,
+				031DB17D27EEEC010020FF98 /* Info.plist */,
+				031DB18D27EEFA030020FF98 /* Localizable.strings */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		031DB18827EEF0FD0020FF98 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				031DB18927EEF10F0020FF98 /* BaseNavigationController.swift */,
+				031DB21127EF2DCC0020FF98 /* BaseViewController.swift */,
+				031DB22827EF406D0020FF98 /* DialogModel.swift */,
+				031DB1FF27EF2A9A0020FF98 /* Protocols */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		031DB18F27EF038A0020FF98 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				031DB21327EF32310020FF98 /* UIKit */,
+				031DB19027EF03AD0020FF98 /* Common */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		031DB19027EF03AD0020FF98 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				031DB21E27EF33F00020FF98 /* Extensions */,
+				031DB1FA27EF295D0020FF98 /* Helpers */,
+				031DB19727EF04BD0020FF98 /* Base */,
+				031DB19C27EF04EC0020FF98 /* Protocol */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		031DB19627EF04690020FF98 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				031DB1D127EF13200020FF98 /* AppCoordinator.swift */,
+				031DB1D327EF13270020FF98 /* TaskReminderCoordinators.swift */,
+				031DB18827EEF0FD0020FF98 /* Base */,
+				0358BF0B27FCC06200AA954A /* Auth */,
+				031DB1DC27EF28E80020FF98 /* Pin Code */,
+				031DB1D527EF13860020FF98 /* TabBar */,
+				031DB24527EF5C000020FF98 /* Home */,
+				039F07472802D82800BDB100 /* DoneTasks */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		031DB19727EF04BD0020FF98 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				031DB19827EF04BD0020FF98 /* Router.swift */,
+				031DB19927EF04BD0020FF98 /* BaseCoordinator.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		031DB19C27EF04EC0020FF98 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				031DB19D27EF04EC0020FF98 /* Routable.swift */,
+				031DB19E27EF04EC0020FF98 /* Presentable.swift */,
+				031DB19F27EF04EC0020FF98 /* Coordinatable.swift */,
+				031DB1A027EF04EC0020FF98 /* BaseViewProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		031DB1A527EF05380020FF98 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				031DB1A627EF055F0020FF98 /* Coordinator */,
+				031DB1AB27EF05680020FF98 /* Modules */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		031DB1A627EF055F0020FF98 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				031DB1A727EF055F0020FF98 /* CoordinatorFactoryProtocol.swift */,
+				031DB1A827EF055F0020FF98 /* CoordinatorFactory.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		031DB1AB27EF05680020FF98 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				031DB1B427EF05690020FF98 /* ModulesFactory.swift */,
+				031DB1B327EF05690020FF98 /* PinCodeFactory.swift */,
+				0358BF0D27FCC08600AA954A /* AuthFactory.swift */,
+				031DB23627EF5BEA0020FF98 /* HomeFactory.swift */,
+				039F07492802D84500BDB100 /* DoneTasksFactory.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		031DB1CC27EF0AE40020FF98 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				039F0766280329E700BDB100 /* CoreDataManager */,
+				031DB1CD27EF0B050020FF98 /* SessionManager.swift */,
+				031DB1FD27EF29F00020FF98 /* NavigationItemManager.swift */,
+				0358BF0727FCB25D00AA954A /* NotificationManager.swift */,
+				031DB20227EF2B840020FF98 /* PinManager.swift */,
+				031DB1CF27EF0EF90020FF98 /* UserDefaultsKeys.swift */,
+				0308760527F07F6F0070C3D6 /* UserManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		031DB1D527EF13860020FF98 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				031DB1D627EF13860020FF98 /* TabBarCoordinator.swift */,
+				031DB1D727EF13860020FF98 /* TabBarCoordinatorOutput.swift */,
+				031DB18627EEF0390020FF98 /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		031DB1DC27EF28E80020FF98 /* Pin Code */ = {
+			isa = PBXGroup;
+			children = (
+				031DB1E427EF28E80020FF98 /* Models */,
+				031DB1EC27EF28E80020FF98 /* PinCodeCoordinator.swift */,
+				031DB1E327EF28E80020FF98 /* PinCodeCoordinatorOutput.swift */,
+				031DB1DD27EF28E80020FF98 /* PinCode */,
+				031DB1E627EF28E80020FF98 /* SetPinCode */,
+			);
+			path = "Pin Code";
+			sourceTree = "<group>";
+		};
+		031DB1DD27EF28E80020FF98 /* PinCode */ = {
+			isa = PBXGroup;
+			children = (
+				031DB1DE27EF28E80020FF98 /* PinCodeInteractor.swift */,
+				031DB1DF27EF28E80020FF98 /* PinCodeViewProtocol.swift */,
+				031DB1E027EF28E80020FF98 /* PinCodePresenter.swift */,
+				031DB1E127EF28E80020FF98 /* PinCodeViewController.swift */,
+				031DB1E227EF28E80020FF98 /* PinCodeAssembly.swift */,
+			);
+			path = PinCode;
+			sourceTree = "<group>";
+		};
+		031DB1E427EF28E80020FF98 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				031DB1E527EF28E80020FF98 /* PinCodeItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		031DB1E627EF28E80020FF98 /* SetPinCode */ = {
+			isa = PBXGroup;
+			children = (
+				031DB1E727EF28E80020FF98 /* SetPinCodeInteractor.swift */,
+				031DB1E827EF28E80020FF98 /* SetPinCodeViewProtocol.swift */,
+				031DB1E927EF28E80020FF98 /* SetPinCodeAssembly.swift */,
+				031DB1EA27EF28E80020FF98 /* SetPinCodePresenter.swift */,
+				031DB1EB27EF28E80020FF98 /* SetPinCodeViewController.swift */,
+			);
+			path = SetPinCode;
+			sourceTree = "<group>";
+		};
+		031DB1FA27EF295D0020FF98 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				031DB23127EF47D00020FF98 /* Helper.swift */,
+				03B8546527F983ED0048C713 /* Formatter.swift */,
+				031DB1FB27EF296C0020FF98 /* Blocks.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		031DB1FF27EF2A9A0020FF98 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				031DB20027EF2A9A0020FF98 /* BasePresenterOutput.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		031DB20427EF2C390020FF98 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				031DB20527EF2C890020FF98 /* PinCodeAuth */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		031DB20527EF2C890020FF98 /* PinCodeAuth */ = {
+			isa = PBXGroup;
+			children = (
+				031DB20627EF2C890020FF98 /* BiometricAuth.swift */,
+				031DB20727EF2C890020FF98 /* RNCryptor */,
+				031DB20927EF2C890020FF98 /* PinCodeAuthEncryption.swift */,
+				031DB20A27EF2C890020FF98 /* PinCodeAuthKeychain.swift */,
+				031DB20B27EF2C890020FF98 /* PinCodeAuth.swift */,
+			);
+			path = PinCodeAuth;
+			sourceTree = "<group>";
+		};
+		031DB20727EF2C890020FF98 /* RNCryptor */ = {
+			isa = PBXGroup;
+			children = (
+				031DB20827EF2C890020FF98 /* RNCryptor.swift */,
+			);
+			path = RNCryptor;
+			sourceTree = "<group>";
+		};
+		031DB21327EF32310020FF98 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				039F074227FF8BF000BDB100 /* Views */,
+				039832F227FB6BF000B08133 /* Base */,
+				03B8546D27F9A6E30048C713 /* TextFields */,
+				03B8546027F8C08E0048C713 /* Buttons */,
+				03B8545D27F8A5F70048C713 /* TextViews */,
+				031DB22A27EF41CD0020FF98 /* Labels */,
+				031DB22127EF3DB50020FF98 /* PinCode */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		031DB21E27EF33F00020FF98 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				031DB23327EF48F60020FF98 /* UIViewController+Extensions.swift */,
+				031DB22F27EF431C0020FF98 /* UIView+Extensions.swift */,
+				031DB21F27EF341A0020FF98 /* String+Extensions.swift */,
+				031DB22D27EF43110020FF98 /* UIStackView+Extension.swift */,
+				03FA052E27F4FFF700C7957D /* TimeInterval+Extensions.swift */,
+				03B8546327F980CF0048C713 /* UITextField+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		031DB22127EF3DB50020FF98 /* PinCode */ = {
+			isa = PBXGroup;
+			children = (
+				031DB22227EF3DB50020FF98 /* PinCodeInputView.swift */,
+				031DB22327EF3DB50020FF98 /* KeyboardView.swift */,
+				031DB22427EF3DB50020FF98 /* DigitKeyView.swift */,
+			);
+			path = PinCode;
+			sourceTree = "<group>";
+		};
+		031DB22A27EF41CD0020FF98 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				031DB22B27EF41D80020FF98 /* TaskPinMessageLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		031DB24527EF5C000020FF98 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				031DB23527EF5BEA0020FF98 /* HomeCoordinator.swift */,
+				031DB23727EF5BEA0020FF98 /* HomeCoordinatorOutput.swift */,
+				031DB24627EF5C0D0020FF98 /* Home */,
+				03B8545227F841AE0048C713 /* AddTask */,
+				03B7AD8627FA1FB8005D5D17 /* EditTask */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		031DB24627EF5C0D0020FF98 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				03FA052D27F4FD9300C7957D /* Cells */,
+				03FA051D27F3ADE300C7957D /* Models */,
+				031DB23827EF5BEA0020FF98 /* HomePresenter.swift */,
+				031DB23927EF5BEA0020FF98 /* HomeViewController.swift */,
+				031DB23A27EF5BEA0020FF98 /* HomeAssembly.swift */,
+				031DB23B27EF5BEA0020FF98 /* HomeInteractor.swift */,
+				031DB23C27EF5BEA0020FF98 /* HomeViewProtocol.swift */,
+				03FA052127F4EB4700C7957D /* HomeViewController + TVDelegate.swift */,
+				03FA052327F4EB6300C7957D /* HomeViewController+TVDataSource.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0358BF0B27FCC06200AA954A /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				0358BF0C27FCC08600AA954A /* AuthCoordinator.swift */,
+				0358BF0E27FCC08600AA954A /* AuthCoordinatorOutput.swift */,
+				0358BF1C27FCC08D00AA954A /* Auth */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		0358BF1C27FCC08D00AA954A /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				0358BF0F27FCC08600AA954A /* AuthPresenter.swift */,
+				0358BF1027FCC08600AA954A /* AuthViewController.swift */,
+				0358BF1127FCC08600AA954A /* AuthAssembly.swift */,
+				0358BF1227FCC08600AA954A /* AuthInteractor.swift */,
+				0358BF1327FCC08600AA954A /* AuthViewProtocol.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		039832F227FB6BF000B08133 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				039832EC27FB6A9200B08133 /* KeyboardNotificationsProtocol.swift */,
+				039832EE27FB6A9E00B08133 /* BaseView.swift */,
+				039832F027FB6AA800B08133 /* ActionButton.swift */,
+				039832EA27FB6A8500B08133 /* BlockingActivityIndicator.swift */,
+			);
+			name = Base;
+			path = ../Base;
+			sourceTree = "<group>";
+		};
+		039F074227FF8BF000BDB100 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				039F074327FF8C0E00BDB100 /* WithCheckBoxView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		039F07472802D82800BDB100 /* DoneTasks */ = {
+			isa = PBXGroup;
+			children = (
+				039F07482802D84500BDB100 /* DoneTasksCoordinator.swift */,
+				039F074A2802D84500BDB100 /* DoneTasksCoordinatorOutput.swift */,
+				039F07582802D86500BDB100 /* DoneTasks */,
+			);
+			path = DoneTasks;
+			sourceTree = "<group>";
+		};
+		039F07582802D86500BDB100 /* DoneTasks */ = {
+			isa = PBXGroup;
+			children = (
+				039F075F2802DBD900BDB100 /* Cells */,
+				039F074B2802D84500BDB100 /* DoneTasksPresenter.swift */,
+				039F074C2802D84500BDB100 /* DoneTasksViewController.swift */,
+				039F074D2802D84500BDB100 /* DoneTasksAssembly.swift */,
+				039F074E2802D84500BDB100 /* DoneTasksInteractor.swift */,
+				039F074F2802D84500BDB100 /* DoneTasksViewProtocol.swift */,
+				039F07592802DB4100BDB100 /* DoneTasksViewController+TVDelegate.swift */,
+				039F075B2802DB5300BDB100 /* DoneTasksViewController+TVDataSource.swift */,
+			);
+			path = DoneTasks;
+			sourceTree = "<group>";
+		};
+		039F075F2802DBD900BDB100 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				039F07602802DBF800BDB100 /* DoneTaskTableViewCell.swift */,
+				039F07622802DC0D00BDB100 /* DoneTaskCellModel.swift */,
+				039F07642802DC1D00BDB100 /* DoneTaskCellModelDelegate.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		039F0766280329E700BDB100 /* CoreDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				039F076B28032A1200BDB100 /* SupportFiles */,
+				039F076728032A0D00BDB100 /* CDTaskModel+CoreDataClass.swift */,
+				039F076828032A0D00BDB100 /* CDTaskModel+CoreDataProperties.swift */,
+				03FA051B27F3AA9100C7957D /* CoreDataManager.swift */,
+			);
+			path = CoreDataManager;
+			sourceTree = "<group>";
+		};
+		039F076B28032A1200BDB100 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		03B7AD8627FA1FB8005D5D17 /* EditTask */ = {
+			isa = PBXGroup;
+			children = (
+				03B7AD8727FA202B005D5D17 /* EditTaskPresenter.swift */,
+				03B7AD8827FA202B005D5D17 /* EditTaskViewController.swift */,
+				03B7AD8927FA202B005D5D17 /* EditTaskAssembly.swift */,
+				03B7AD8A27FA202B005D5D17 /* EditTaskInteractor.swift */,
+				03B7AD8B27FA202B005D5D17 /* EditTaskViewProtocol.swift */,
+			);
+			path = EditTask;
+			sourceTree = "<group>";
+		};
+		03B8545227F841AE0048C713 /* AddTask */ = {
+			isa = PBXGroup;
+			children = (
+				03B8546A27F99E8E0048C713 /* Items */,
+				03B8545327F841FF0048C713 /* AddTaskPresenter.swift */,
+				03B8545427F841FF0048C713 /* AddTaskViewController.swift */,
+				03B8545527F841FF0048C713 /* AddTaskAssembly.swift */,
+				03B8545627F841FF0048C713 /* AddTaskInteractor.swift */,
+				03B8545727F841FF0048C713 /* AddTaskViewProtocol.swift */,
+			);
+			path = AddTask;
+			sourceTree = "<group>";
+		};
+		03B8545D27F8A5F70048C713 /* TextViews */ = {
+			isa = PBXGroup;
+			children = (
+				03B8545E27F8A6090048C713 /* TextInputView.swift */,
+			);
+			path = TextViews;
+			sourceTree = "<group>";
+		};
+		03B8546027F8C08E0048C713 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				03B8546127F8C0A60048C713 /* MainCornersButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		03B8546A27F99E8E0048C713 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				03B8546B27F99EB30048C713 /* TaskFieldType.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		03B8546D27F9A6E30048C713 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				039F074027FF6B4E00BDB100 /* InputSummFieldView.swift */,
+				039F073C27FF678600BDB100 /* InputFieldView.swift */,
+				039F073D27FF678700BDB100 /* InputFieldView.xib */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		03FA051D27F3ADE300C7957D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				03FA051E27F3ADF200C7957D /* TaskModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		03FA052D27F4FD9300C7957D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				03FA052827F4EE3300C7957D /* TaskTableViewCell.swift */,
+				03FA052927F4EE3300C7957D /* TaskCellModel.swift */,
+				039F07452801C14100BDB100 /* TaskCellModelDelegate.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CAD4F91D0D8857E430362223 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C94C7E73C38B90634D9BCD5 /* Pods_Task_Reminder.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +807,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 031DB18027EEEC010020FF98 /* Build configuration list for PBXNativeTarget "Task Reminder" */;
 			buildPhases = (
+				59AA688A7D859431A78AE6C4 /* [CP] Check Pods Manifest.lock */,
 				031DB16527EEEBFD0020FF98 /* Sources */,
 				031DB16627EEEBFD0020FF98 /* Frameworks */,
 				031DB16727EEEBFD0020FF98 /* Resources */,
+				6BBA83EADC1078B9C1EB8978 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,36 +861,185 @@
 			buildActionMask = 2147483647;
 			files = (
 				031DB17C27EEEC010020FF98 /* LaunchScreen.storyboard in Resources */,
+				031DB18E27EEFA030020FF98 /* Localizable.strings in Resources */,
 				031DB17927EEEC010020FF98 /* Assets.xcassets in Resources */,
-				031DB17427EEEBFD0020FF98 /* Main.storyboard in Resources */,
+				039F073F27FF678700BDB100 /* InputFieldView.xib in Resources */,
+				0358BF0A27FCB33000AA954A /* done_image.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		59AA688A7D859431A78AE6C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Task Reminder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BBA83EADC1078B9C1EB8978 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Task Reminder/Pods-Task Reminder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Task Reminder/Pods-Task Reminder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Task Reminder/Pods-Task Reminder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		031DB16527EEEBFD0020FF98 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				031DB17127EEEBFD0020FF98 /* ViewController.swift in Sources */,
+				03FA052B27F4EE3300C7957D /* TaskTableViewCell.swift in Sources */,
+				031DB1F427EF28E80020FF98 /* SetPinCodeInteractor.swift in Sources */,
+				031DB1F627EF28E80020FF98 /* SetPinCodeAssembly.swift in Sources */,
+				031DB19A27EF04BD0020FF98 /* Router.swift in Sources */,
+				039F07562802D84500BDB100 /* DoneTasksInteractor.swift in Sources */,
+				039F07502802D84500BDB100 /* DoneTasksCoordinator.swift in Sources */,
+				031DB24027EF5BEA0020FF98 /* HomePresenter.swift in Sources */,
+				03B8545927F841FF0048C713 /* AddTaskViewController.swift in Sources */,
+				03B7AD8C27FA202B005D5D17 /* EditTaskPresenter.swift in Sources */,
+				031DB1D427EF13270020FF98 /* TaskReminderCoordinators.swift in Sources */,
+				031DB24127EF5BEA0020FF98 /* HomeViewController.swift in Sources */,
+				031DB23427EF48F60020FF98 /* UIViewController+Extensions.swift in Sources */,
+				039F07522802D84500BDB100 /* DoneTasksCoordinatorOutput.swift in Sources */,
+				031DB19B27EF04BD0020FF98 /* BaseCoordinator.swift in Sources */,
+				031DB1CE27EF0B050020FF98 /* SessionManager.swift in Sources */,
+				031DB20127EF2A9A0020FF98 /* BasePresenterOutput.swift in Sources */,
+				0358BF1A27FCC08600AA954A /* AuthInteractor.swift in Sources */,
+				031DB1C327EF05690020FF98 /* PinCodeFactory.swift in Sources */,
+				031DB23227EF47D00020FF98 /* Helper.swift in Sources */,
+				0358BF1627FCC08600AA954A /* AuthCoordinatorOutput.swift in Sources */,
+				031DB23D27EF5BEA0020FF98 /* HomeCoordinator.swift in Sources */,
+				031DB1F327EF28E80020FF98 /* PinCodeItem.swift in Sources */,
+				039F076A28032A0D00BDB100 /* CDTaskModel+CoreDataClass.swift in Sources */,
+				031DB1F027EF28E80020FF98 /* PinCodeViewController.swift in Sources */,
+				031DB1D027EF0EF90020FF98 /* UserDefaultsKeys.swift in Sources */,
+				031DB22C27EF41D90020FF98 /* TaskPinMessageLabel.swift in Sources */,
 				031DB16D27EEEBFD0020FF98 /* AppDelegate.swift in Sources */,
+				0358BF0827FCB25D00AA954A /* NotificationManager.swift in Sources */,
+				031DB1DA27EF13870020FF98 /* TabBarCoordinatorOutput.swift in Sources */,
+				031DB23027EF431C0020FF98 /* UIView+Extensions.swift in Sources */,
+				0358BF1827FCC08600AA954A /* AuthViewController.swift in Sources */,
+				03B8546C27F99EB30048C713 /* TaskFieldType.swift in Sources */,
+				039832EB27FB6A8500B08133 /* BlockingActivityIndicator.swift in Sources */,
+				03FA052F27F4FFF700C7957D /* TimeInterval+Extensions.swift in Sources */,
+				031DB21227EF2DCC0020FF98 /* BaseViewController.swift in Sources */,
+				039832F127FB6AA800B08133 /* ActionButton.swift in Sources */,
+				03B7AD8E27FA202B005D5D17 /* EditTaskAssembly.swift in Sources */,
+				031DB1F127EF28E80020FF98 /* PinCodeAssembly.swift in Sources */,
+				039F07532802D84500BDB100 /* DoneTasksPresenter.swift in Sources */,
+				03B8545F27F8A6090048C713 /* TextInputView.swift in Sources */,
+				031DB20C27EF2C890020FF98 /* BiometricAuth.swift in Sources */,
+				03B7AD8F27FA202B005D5D17 /* EditTaskInteractor.swift in Sources */,
+				031DB1ED27EF28E80020FF98 /* PinCodeInteractor.swift in Sources */,
+				031DB1A927EF055F0020FF98 /* CoordinatorFactoryProtocol.swift in Sources */,
+				031DB20E27EF2C890020FF98 /* PinCodeAuthEncryption.swift in Sources */,
+				031DB20D27EF2C890020FF98 /* RNCryptor.swift in Sources */,
+				031DB20F27EF2C890020FF98 /* PinCodeAuthKeychain.swift in Sources */,
+				0358BF1B27FCC08600AA954A /* AuthViewProtocol.swift in Sources */,
+				031DB1A427EF04EC0020FF98 /* BaseViewProtocol.swift in Sources */,
+				031DB1F927EF28E80020FF98 /* PinCodeCoordinator.swift in Sources */,
+				031DB24327EF5BEA0020FF98 /* HomeInteractor.swift in Sources */,
+				03FA052427F4EB6300C7957D /* HomeViewController+TVDataSource.swift in Sources */,
+				031DB23F27EF5BEA0020FF98 /* HomeCoordinatorOutput.swift in Sources */,
+				039F07462801C14100BDB100 /* TaskCellModelDelegate.swift in Sources */,
+				03B8545B27F842000048C713 /* AddTaskInteractor.swift in Sources */,
+				03B8545A27F842000048C713 /* AddTaskAssembly.swift in Sources */,
+				039F07552802D84500BDB100 /* DoneTasksAssembly.swift in Sources */,
+				0358BF1527FCC08600AA954A /* AuthFactory.swift in Sources */,
+				031DB22927EF406D0020FF98 /* DialogModel.swift in Sources */,
+				039F07512802D84500BDB100 /* DoneTasksFactory.swift in Sources */,
+				031DB24427EF5BEA0020FF98 /* HomeViewProtocol.swift in Sources */,
+				03B8545C27F842000048C713 /* AddTaskViewProtocol.swift in Sources */,
+				031DB18A27EEF10F0020FF98 /* BaseNavigationController.swift in Sources */,
+				039F074427FF8C0E00BDB100 /* WithCheckBoxView.swift in Sources */,
+				031DB1A327EF04EC0020FF98 /* Coordinatable.swift in Sources */,
+				031DB22027EF341A0020FF98 /* String+Extensions.swift in Sources */,
+				031DB1F727EF28E80020FF98 /* SetPinCodePresenter.swift in Sources */,
+				0358BF1427FCC08600AA954A /* AuthCoordinator.swift in Sources */,
 				031DB17727EEEBFD0020FF98 /* Task_Reminder.xcdatamodeld in Sources */,
+				03B7AD8D27FA202B005D5D17 /* EditTaskViewController.swift in Sources */,
+				031DB1FC27EF296C0020FF98 /* Blocks.swift in Sources */,
+				03B7AD9027FA202B005D5D17 /* EditTaskViewProtocol.swift in Sources */,
+				031DB1F227EF28E80020FF98 /* PinCodeCoordinatorOutput.swift in Sources */,
+				039F07632802DC0D00BDB100 /* DoneTaskCellModel.swift in Sources */,
+				039F07612802DBF800BDB100 /* DoneTaskTableViewCell.swift in Sources */,
+				03B8545827F841FF0048C713 /* AddTaskPresenter.swift in Sources */,
+				039F073E27FF678700BDB100 /* InputFieldView.swift in Sources */,
+				031DB20327EF2B840020FF98 /* PinManager.swift in Sources */,
+				031DB23E27EF5BEA0020FF98 /* HomeFactory.swift in Sources */,
+				039F07572802D84500BDB100 /* DoneTasksViewProtocol.swift in Sources */,
+				031DB1F527EF28E80020FF98 /* SetPinCodeViewProtocol.swift in Sources */,
+				03FA052227F4EB4700C7957D /* HomeViewController + TVDelegate.swift in Sources */,
+				03FA052C27F4EE3300C7957D /* TaskCellModel.swift in Sources */,
+				039F074127FF6B4E00BDB100 /* InputSummFieldView.swift in Sources */,
+				031DB1D227EF13200020FF98 /* AppCoordinator.swift in Sources */,
+				031DB1AA27EF055F0020FF98 /* CoordinatorFactory.swift in Sources */,
+				031DB22527EF3DB50020FF98 /* PinCodeInputView.swift in Sources */,
+				031DB21027EF2C890020FF98 /* PinCodeAuth.swift in Sources */,
+				031DB1F827EF28E80020FF98 /* SetPinCodeViewController.swift in Sources */,
+				03FA051C27F3AA9100C7957D /* CoreDataManager.swift in Sources */,
+				03B8546627F983ED0048C713 /* Formatter.swift in Sources */,
+				031DB22E27EF43110020FF98 /* UIStackView+Extension.swift in Sources */,
+				031DB18727EEF0390020FF98 /* TabBarViewController.swift in Sources */,
+				031DB1C427EF05690020FF98 /* ModulesFactory.swift in Sources */,
+				031DB24227EF5BEA0020FF98 /* HomeAssembly.swift in Sources */,
+				039F075C2802DB5300BDB100 /* DoneTasksViewController+TVDataSource.swift in Sources */,
+				03B8546227F8C0A60048C713 /* MainCornersButton.swift in Sources */,
+				031DB1EE27EF28E80020FF98 /* PinCodeViewProtocol.swift in Sources */,
+				031DB1D927EF13870020FF98 /* TabBarCoordinator.swift in Sources */,
 				031DB16F27EEEBFD0020FF98 /* SceneDelegate.swift in Sources */,
+				03FA051F27F3ADF200C7957D /* TaskModel.swift in Sources */,
+				03B8546427F980CF0048C713 /* UITextField+Extensions.swift in Sources */,
+				031DB22727EF3DB50020FF98 /* DigitKeyView.swift in Sources */,
+				031DB1A227EF04EC0020FF98 /* Presentable.swift in Sources */,
+				0358BF1927FCC08600AA954A /* AuthAssembly.swift in Sources */,
+				039F07542802D84500BDB100 /* DoneTasksViewController.swift in Sources */,
+				0358BF1727FCC08600AA954A /* AuthPresenter.swift in Sources */,
+				031DB1FE27EF29F00020FF98 /* NavigationItemManager.swift in Sources */,
+				039832ED27FB6A9200B08133 /* KeyboardNotificationsProtocol.swift in Sources */,
+				0308760627F07F6F0070C3D6 /* UserManager.swift in Sources */,
+				039F076928032A0D00BDB100 /* CDTaskModel+CoreDataProperties.swift in Sources */,
+				031DB22627EF3DB50020FF98 /* KeyboardView.swift in Sources */,
+				031DB1A127EF04EC0020FF98 /* Routable.swift in Sources */,
+				031DB1EF27EF28E80020FF98 /* PinCodePresenter.swift in Sources */,
+				039F075A2802DB4100BDB100 /* DoneTasksViewController+TVDelegate.swift in Sources */,
+				039832EF27FB6A9E00B08133 /* BaseView.swift in Sources */,
+				039F07652802DC1D00BDB100 /* DoneTaskCellModelDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		031DB17227EEEBFD0020FF98 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				031DB17327EEEBFD0020FF98 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		031DB17A27EEEC010020FF98 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -221,7 +1102,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -276,7 +1157,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -288,6 +1169,7 @@
 		};
 		031DB18127EEEC010020FF98 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70B1C7D797C4E53B129BB8BF /* Pods-Task Reminder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,12 +1177,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 95G8586896;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Task Reminder/Info.plist";
+				INFOPLIST_FILE = "Task Reminder/Resourses/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Приложение запрашивает доступ к камере";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Приложение запрашивает доступ к датчикам биометрии для аутентификация пользователя";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Приложение запрашивает доступ к фото библиотеки";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Приложение запрашивает доступ к фото библиотеки";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,12 +1197,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		031DB18227EEEC010020FF98 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81A0CE6E3BB9A4080ADC0D11 /* Pods-Task Reminder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,12 +1211,17 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 95G8586896;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Task Reminder/Info.plist";
+				INFOPLIST_FILE = "Task Reminder/Resourses/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Приложение запрашивает доступ к камере";
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Приложение запрашивает доступ к датчикам биометрии для аутентификация пользователя";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Приложение запрашивает доступ к фото библиотеки";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Приложение запрашивает доступ к фото библиотеки";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -338,7 +1231,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
