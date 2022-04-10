@@ -12,10 +12,14 @@ final class EditTaskInteractor {
     
     unowned var presenter: EditTaskPresenter?
     
-    var dataStore = DataStore.shared
-
+    var tasksDataService: TasksProviderProtocol
+    
+    init(with tasksProvider: TasksProviderProtocol = TasksProvider()) {
+        self.tasksDataService = tasksProvider
+    }
+    
     func editTask(with taskModel: TaskModel) {
-        dataStore.changeTask(task: taskModel) {[weak self] changed in
+        tasksDataService.changeTask(task: taskModel) {[weak self] changed in
             switch changed {
                 
             case true:

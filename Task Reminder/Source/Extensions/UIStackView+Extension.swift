@@ -1,9 +1,6 @@
 //
 //  UIStackView+Extension.swift
-//  Global24
 //
-//  Created by Dmitry Siryk on 8/16/20.
-//  Copyright © 2020 ltech. All rights reserved.
 //
 
 import UIKit

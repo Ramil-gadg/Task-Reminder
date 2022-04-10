@@ -15,9 +15,7 @@ class TaskModel {
     var task: String
     var doneTime: Date?
     var startTime: Date
-    
     var isDone: Bool = false
-    
     var endTime: Date?
     
     init(with name: String,
@@ -63,7 +61,7 @@ class TaskModel {
         }
         return Date().timeIntervalSince(startTime)
     }
-
+    
     /// прошло ли время, отведенное на задачу
     var isExpired: Bool? {
         guard let endTime = endTime else {

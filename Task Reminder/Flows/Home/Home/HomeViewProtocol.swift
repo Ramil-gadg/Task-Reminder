@@ -17,17 +17,20 @@ protocol HomeViewProtocol: BaseViewProtocol, AddTaskProtocol, EditTaskProtocol {
     
     /// Изменение задачи
     var onEditTask: ((TaskModel) -> Void)? { get set }
-
+    
 }
 
 protocol AddTaskProtocol: AnyObject, StartTimer {
+    
     func taskAdded(with task: TaskModel)
 }
 
 protocol EditTaskProtocol: AnyObject, StartTimer {
+    
     func taskEdit()
 }
 
 protocol StartTimer {
+    
     func startTimer()
 }

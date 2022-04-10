@@ -1,12 +1,9 @@
 //
 //  TimeInterval+Extensions.swift
-//  Task Reminder
 //
-//  Created by Рамил Гаджиев on 31.03.2022.
 //
 
 import Foundation
-
 
 extension TimeInterval{
 

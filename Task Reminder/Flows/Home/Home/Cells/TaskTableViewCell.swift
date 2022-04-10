@@ -171,7 +171,7 @@ class TaskTableViewCell: UITableViewCell {
     }
     
     private func initListeners() {
-
+        
         doneBtn.touchUp = { [weak self] _ in
             self?.model?.doneBtnTapped()
         }

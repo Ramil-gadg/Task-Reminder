@@ -8,5 +8,6 @@
 import Foundation
 
 protocol TaskCellModelDelegate: AnyObject {
+    
     func doneBtnTapped(with id: String, name: String)
 }

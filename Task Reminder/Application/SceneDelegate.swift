@@ -11,6 +11,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
     
+    var coreDataManager = CoreDataManager.shared
+    
     private lazy var coordinator: Coordinatable = makeCoordinator()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -32,8 +34,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneDidBecomeActive(_ scene: UIScene) {
-        // Called when the scene has moved from an inactive state to an active state.
-        // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
+        
+        UIApplication.shared.applicationIconBadgeNumber = 0
     }
 
     func sceneWillResignActive(_ scene: UIScene) {
@@ -47,9 +49,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     func sceneDidEnterBackground(_ scene: UIScene) {
         PinManager.shared.didEnterBackground()
-        
-        // Save changes in the application's managed object context when the application transitions to the background.
-        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
+
+        coreDataManager.saveContext()
     }
 }
 

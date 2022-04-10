@@ -33,7 +33,7 @@ enum TabItem: String, CaseIterable {
 }
 
 final class TabBarCoordinator: BaseCoordinator, TabBarCoordinatorOutput {
-  
+    
     var finishFlow: CompletionBlock?
     
     private let modulesFactory = ModulesFactory()
@@ -65,7 +65,7 @@ final class TabBarCoordinator: BaseCoordinator, TabBarCoordinatorOutput {
     
     // swiftlint:disable function_body_length
     func initCoordinator(type: TabItem) {
-  
+        
         let navController = BaseNavigationController()
         let router = Router(rootController: navController)
         
@@ -105,7 +105,7 @@ final class TabBarCoordinator: BaseCoordinator, TabBarCoordinatorOutput {
         
         itemRouters[type] = router
     }
-
+    
     deinit {
         print("TabBarCoordinator is deinit")
     }
@@ -149,8 +149,8 @@ private extension TabBarCoordinator {
         let topCoordinator = AppCoordinator.childCoordinators.last
         guard let origRouter = topCoordinator?.router,
               (topCoordinator as? PinCodeCoordinator) == nil else {
-            return
-        }
+                  return
+              }
         
         let navController = BaseNavigationController()
         let coordinator = coordinatorFactory.makePinCodeCoordinator(

@@ -24,12 +24,12 @@ protocol DoneTasksPresenterOutput: BasePresenterOutput {
 }
 
 final class DoneTasksPresenter {
-
+    
     weak var output: DoneTasksPresenterOutput?
     
     var interactor: DoneTasksInteractor?
     weak var notifiations = NotificationManager.shared
-        
+    
     func onPresentTasks(with tasks: [TaskModel]) {
         tasks.forEach { task in
             if let time = task.endTime, time > Date() {
@@ -62,7 +62,7 @@ final class DoneTasksPresenter {
 // MARK: - DoneTasksPresenterInput
 
 extension DoneTasksPresenter: DoneTasksPresenterInput {
-   
+    
     func onStart(animating: Bool) {
         output?.onAnimating(isStart: animating)
         interactor?.fetchTasks()
@@ -82,5 +82,5 @@ extension DoneTasksPresenter: DoneTasksPresenterInput {
         output?.onAnimating(isStart: true)
         interactor?.deleteAllTasks()
     }
-
+    
 }

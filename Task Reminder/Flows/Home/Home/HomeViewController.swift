@@ -8,9 +8,9 @@
 
 import UIKit
 
-    /**
-     Home главный экран с активными задачами
-     */
+/**
+ Home главный экран с активными задачами
+ */
 class HomeViewController: BaseViewController,
                           HomeAssemblable,
                           WithNavigationItem {
@@ -20,7 +20,7 @@ class HomeViewController: BaseViewController,
     var onCompletion: CompletionBlock?
     var onAddTask: CompletionBlock?
     var onEditTask: ((TaskModel) -> Void)?
-
+    
     var timer: Timer?
     var commonTasks = [TaskCellModel]()
     var tasks = [TaskCellModel]()
@@ -57,7 +57,7 @@ class HomeViewController: BaseViewController,
         tv.translatesAutoresizingMaskIntoConstraints = false
         return tv
     }()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -111,24 +111,34 @@ class HomeViewController: BaseViewController,
     }
     
     func startTimer() {
-
+        
         if timer == nil {
             timer = Timer(timeInterval: 1.0,
-                                target: self,
-                                selector: #selector(refresh),
-                                userInfo: nil,
-                                repeats: true)
-              RunLoop.current.add(timer!, forMode: .common)
-              timer!.tolerance = 0.1
+                          target: self,
+                          selector: #selector(refresh),
+                          userInfo: nil,
+                          repeats: true)
+            RunLoop.current.add(timer!, forMode: .common)
+            timer!.tolerance = 0.1
         }
     }
-
+    
     func stopTimer() {
         if timer != nil {
             timer?.invalidate()
             timer = nil
         }
     }
+    
+    deinit {
+        print("HomeViewController is deinit")
+    }
+    
+}
+
+// MARK: - private methods
+
+private extension HomeViewController {
     
     @objc private func refresh() {
         print(1)
@@ -144,10 +154,6 @@ class HomeViewController: BaseViewController,
     
     @objc func segmentTapped(segment: UISegmentedControl) {
         filterTasks(with: segment.selectedSegmentIndex)
-    }
-
-    deinit {
-        print("HomeViewController is deinit")
     }
     
     @objc func callPullToRefresh() {
@@ -185,6 +191,8 @@ extension HomeViewController {
     
 }
 
+// MARK: - TaskCellModelDelegate
+
 extension HomeViewController: TaskCellModelDelegate {
     func doneBtnTapped(with id: String, name: String) {
         showQuetionDialogQuetion(
@@ -195,7 +203,7 @@ extension HomeViewController: TaskCellModelDelegate {
                 noTitle: "alert_a_no".localized,
                 onYes: { [weak self] in
                     self?.presenter?.onDoneTask(with: id)
-
+                    
                 },
                 onNo: {}
             )
@@ -203,23 +211,21 @@ extension HomeViewController: TaskCellModelDelegate {
     }
 }
 
-
 // MARK: - AddTaskProtocol
+
 extension HomeViewController {
     
     func taskAdded(with task: TaskModel) {
         presenter?.onStart(animating: true)
-
+        
     }
 }
 
 // MARK: - EditTaskProtocol
+
 extension HomeViewController {
     
     func taskEdit() {
         presenter?.onStart(animating: true)
     }
 }
-
-
-

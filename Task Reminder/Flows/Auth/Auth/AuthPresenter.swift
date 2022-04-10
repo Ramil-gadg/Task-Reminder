@@ -26,7 +26,7 @@ protocol AuthPresenterOutput: BasePresenterOutput {
 }
 
 final class AuthPresenter {
-
+    
     weak var output: AuthPresenterOutput?
     
     var interactor: AuthInteractor?
@@ -49,9 +49,9 @@ final class AuthPresenter {
                 SessionManager.skipCreatePin = true
                 self.output?.onCompletion?()
             }))
-            
+        
     }
-
+    
     func onFailer(with message: String) {
         output?.onAnimating(isStart: false)
         output?.showCommonError(message: message)
@@ -61,7 +61,7 @@ final class AuthPresenter {
 private extension AuthPresenter {
     private func validate() {
         var isValid = false
-         
+        
         if (password?.count ?? 0 > 4) == true,
            email?.isValidEmail == true {
             isValid = true
@@ -90,7 +90,7 @@ extension AuthPresenter: AuthPresenterInput {
         if isValid {
             output?.onAnimating(isStart: true)
             interactor?.login(with: email ?? "", password: password ?? "")
-
+            
         }
     }
     
@@ -108,5 +108,5 @@ extension AuthPresenter: AuthPresenterInput {
         }
         validate()
     }
-
+    
 }

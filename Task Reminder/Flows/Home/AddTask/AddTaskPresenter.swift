@@ -17,14 +17,14 @@ protocol AddTaskPresenterInput: AnyObject {
 protocol AddTaskPresenterOutput: BasePresenterOutput {
     
     var presenter: AddTaskPresenterInput? { get set }
-    func taskAdded(with task: TaskModel)
     
+    func taskAdded(with task: TaskModel)
     func setButtonEnabled(enabled: Bool)
-
+    
 }
 
 final class AddTaskPresenter {
-
+    
     weak var output: AddTaskPresenterOutput?
     
     var interactor: AddTaskInteractor?

@@ -13,7 +13,7 @@ final class TabBarController: UITabBarController {
         super.viewDidLoad()
         
         additionalSetup()
-
+        
     }
     
     private func additionalSetup() {
@@ -21,11 +21,11 @@ final class TabBarController: UITabBarController {
         let appearance = UITabBarAppearance()
         appearance.configureWithOpaqueBackground()
         appearance.backgroundColor = #colorLiteral(red: 0.921431005, green: 0.9214526415, blue: 0.9214410186, alpha: 1)
-
+        
         setTabBarItemColors(appearance.stackedLayoutAppearance)
         setTabBarItemColors(appearance.inlineLayoutAppearance)
         setTabBarItemColors(appearance.compactInlineLayoutAppearance)
-
+        
         self.tabBar.standardAppearance = appearance
         if #available(iOS 15.0, *) {
             self.tabBar.scrollEdgeAppearance = tabBar.standardAppearance

@@ -220,6 +220,11 @@ class AddTaskViewController: BaseViewController,
         print("AddTaskViewController is deinit")
     }
     
+}
+// MARK: - private methods
+
+extension AddTaskViewController {
+    
     @objc
     func cancelAction() {
         view.endEditing(true)
@@ -255,6 +260,7 @@ class AddTaskViewController: BaseViewController,
         }
     }
 }
+
 
 // MARK: - AddTaskPresenterOutput
 

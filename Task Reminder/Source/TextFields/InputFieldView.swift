@@ -1,8 +1,6 @@
 //
-//  BarrierInputFieldView.swift
-//  barrier-valve
+//  InputFieldView.swift
 //
-//  Created by Рамил Гаджиев on 25.02.2022.
 //
 
 import UIKit

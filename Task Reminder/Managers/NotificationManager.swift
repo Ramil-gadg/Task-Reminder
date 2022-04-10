@@ -100,9 +100,3 @@ extension NotificationManager: UNUserNotificationCenterDelegate {
         completionHandler()
     }
 }
-
-enum PushActions: String {
-    case remindAfterHour
-    case remindAfterTenMin
-    case closeAction
-}

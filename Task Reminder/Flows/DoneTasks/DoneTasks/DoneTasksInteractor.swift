@@ -9,13 +9,17 @@
 import UIKit
 
 final class DoneTasksInteractor {
-
+    
     unowned var presenter: DoneTasksPresenter?
     
-    var dataStore = DataStore.shared
+    var tasksDataService: TasksProviderProtocol
+    
+    init(with tasksProvider: TasksProviderProtocol = TasksProvider()) {
+        self.tasksDataService = tasksProvider
+    }
     
     func fetchTasks() {
-        dataStore.fetchTaskModels { [weak self] result in
+        tasksDataService.fetchTasksModel { [weak self] result in
             switch result {
                 
             case .success(let tasks):
@@ -29,7 +33,7 @@ final class DoneTasksInteractor {
     }
     
     func deleteTask(with taskId: String) {
-        dataStore.deleteTask(
+        tasksDataService.deleteTask(
             taskId: taskId,
             completion: { [weak self] result in
                 switch result {
@@ -44,7 +48,7 @@ final class DoneTasksInteractor {
     }
     
     func doneTask(with taskId: String) {
-        dataStore.doneTask(
+        tasksDataService.doneTask(
             id: taskId,
             isDone: false,
             completion: { [weak self] result in
@@ -59,7 +63,7 @@ final class DoneTasksInteractor {
     }
     
     func deleteAllTasks() {
-        dataStore.deleteDoneTasks(
+        tasksDataService.deleteDoneTasks(
             completion: { [weak self] result in
                 switch result {
                 case true:

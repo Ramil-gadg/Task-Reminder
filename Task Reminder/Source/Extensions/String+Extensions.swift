@@ -6,8 +6,6 @@
 
 import Foundation
 
-// var
-
 extension String {
 
     var localized: String {

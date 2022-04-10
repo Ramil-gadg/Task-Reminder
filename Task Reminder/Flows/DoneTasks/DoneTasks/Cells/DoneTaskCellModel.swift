@@ -33,7 +33,7 @@ class DoneTaskCellModel {
         self.model = model
         self.delegate = delegate
     }
-        
+    
     func cellForTableView(tableView: UITableView, atIndexPath indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(
             withIdentifier: DoneTaskCellModel.reuseIdentifier,

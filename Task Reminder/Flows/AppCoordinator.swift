@@ -10,7 +10,7 @@ final class AppCoordinator: BaseCoordinator {
     private let factory: CoordinatorFactoryProtocol
     
     private let pinCodeManager = PinManager.shared
-        
+    
     private var instructor: LaunchInstructor {
         LaunchInstructor.setup()
     }
@@ -28,7 +28,7 @@ final class AppCoordinator: BaseCoordinator {
         case main
         case createPin(token: String)
         case inputPin
-            
+        
         static func setup() -> LaunchInstructor {
             
             if SessionManager.didSetPin == false,
@@ -46,9 +46,9 @@ final class AppCoordinator: BaseCoordinator {
                       SessionManager.skipCreatePin == true {
                 return .main
             } else if SessionManager.didSetPin == true,
-                     SessionManager.token != nil {
-               return .main
-           } else {
+                      SessionManager.token != nil {
+                return .main
+            } else {
                 let token = "123456"
                 SessionManager.token = token
                 return .createPin(token: token)
@@ -98,7 +98,7 @@ extension AppCoordinator {
         addDependency(coordinator)
         coordinator.start()
     }
-
+    
     func performTabBar() {
         let coordinator = factory.makeTabBarCoordinator(
             router: router,
@@ -158,7 +158,7 @@ extension AppCoordinator {
                 return
             }
             self?.removeDependency(coordinator)
-   
+            
             self?.router.dismissModule()
             self?.start()
         }

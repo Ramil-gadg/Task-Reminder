@@ -9,7 +9,7 @@
 import UIKit
 
 protocol HomePresenterInput: AnyObject {
-
+    
     func onStart(animating: Bool)
     func onDeleteTask(with taskId: String)
     func onDoneTask(with taskId: String)
@@ -25,9 +25,7 @@ protocol HomePresenterOutput: BasePresenterOutput {
 final class HomePresenter {
     
     weak var notifiations = NotificationManager.shared
-
     weak var output: HomePresenterOutput?
-    
     var interactor: HomeInteractor?
     
     func onPresentTasks(with tasks: [TaskModel]) {
@@ -35,7 +33,7 @@ final class HomePresenter {
         tasks.forEach { task in
             if let time = task.endTime, time > Date() {
                 switch task.isDone {
-
+                    
                 case true:
                     UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [task.id])
                 case false:
@@ -78,5 +76,5 @@ extension HomePresenter: HomePresenterInput {
         output?.onAnimating(isStart: true)
         interactor?.doneTask(with: taskId)
     }
-
+    
 }

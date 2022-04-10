@@ -9,11 +9,11 @@
 import UIKit
 
 final class DoneTasksCoordinator: BaseCoordinator, DoneTasksCoordinatorOutput {
-  
+    
     var finishFlow: CompletionBlock?
     
     private let factory: DoneTasksFactory
-        
+    
     init(with factory: DoneTasksFactory,
          router: Routable,
          coordinatorFactory: CoordinatorFactoryProtocol) {

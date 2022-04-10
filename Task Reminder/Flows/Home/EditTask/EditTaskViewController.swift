@@ -155,6 +155,11 @@ class EditTaskViewController: BaseViewController,
         deregisterForKeyboardNotifications()
         print("EditTaskViewController is deinit")
     }
+}
+
+// MARK: - private methods
+
+extension EditTaskViewController {
     
     @objc
     func cancelAction() {
@@ -192,7 +197,7 @@ extension EditTaskViewController {
         taskView.setText(text: task.task)
         tf.text = Formatter.getStringFromDateFormatter(date: task.endTime)
     }
-
+    
     func setButtonEnabled(enabled: Bool) {
         editBtnButton.alpha = enabled ? 1.0 : 0.5
     }

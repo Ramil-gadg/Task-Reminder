@@ -122,7 +122,6 @@ final class DigitKeyView: BaseView {
             actionButton.bottomAnchor.constraint(equalTo: containerView.bottomAnchor)
         
         ])
-        
     }
     
     override func initListeners() {

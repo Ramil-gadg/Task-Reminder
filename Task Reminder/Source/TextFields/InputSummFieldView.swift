@@ -1,8 +1,6 @@
 //
 //  InputPlainFieldView.swift
-//  delta-ohrana
 //
-//  Created by Рамил Гаджиев on 18.02.2022.
 //
 
 import UIKit
@@ -28,7 +26,6 @@ class InputPlainFieldView: UITextField {
         self.font = UIFont.systemFont(ofSize: 17, weight: .semibold)
         self.tintColor = .blue
     }
-    
 }
 
 extension InputPlainFieldView: UITextFieldDelegate {

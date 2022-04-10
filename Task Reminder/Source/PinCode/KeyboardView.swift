@@ -57,10 +57,7 @@ final class KeyboardView: BaseView {
     }
     
     override func initUI() {
-//        
-//        deleteView.translatesAutoresizingMaskIntoConstraints = false
-//        exitView.translatesAutoresizingMaskIntoConstraints = false
-//        keysCollectionView.forEach { $0.translatesAutoresizingMaskIntoConstraints = false }
+
         keysCollectionView.forEach { addSubview($0) }
         addSubviews(deleteView, exitView)
     }

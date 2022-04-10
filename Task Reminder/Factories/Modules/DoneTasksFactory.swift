@@ -10,6 +10,7 @@ import Foundation
 
 protocol DoneTasksFactory {
     
+    /// Экран чс выполненными заданиями
     func makeDoneTasksView() -> DoneTasksViewProtocol
     
 }

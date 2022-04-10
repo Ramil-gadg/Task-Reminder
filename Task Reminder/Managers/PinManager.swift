@@ -22,7 +22,7 @@ class PinManager {
     func willEnterForeground() {
         let timeNow = Date().timeIntervalSince1970
         guard let timeBeginBackground = timeBeginBackground,
-              timeNow - timeBeginBackground >= 10 else {
+              timeNow - timeBeginBackground >= 20 else {
             self.timeBeginBackground = nil
             return
         }

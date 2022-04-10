@@ -8,7 +8,7 @@
 import UIKit
 
 extension HomeViewController: UITableViewDelegate {
-
+    
     func tableView(
         _ tableView: UITableView,
         heightForHeaderInSection section: Int

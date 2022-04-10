@@ -1,14 +1,12 @@
 //
 //  TextInputView.swift
 //
-//  Created by Рамил Гаджиев on 17.03.2022.
 //
 
 import UIKit
 
 class TextInputView: BaseView {
     
-    var lastText: String = "aaaoaaaoaaoaa3ss"
     var isEditing = false
     var textEntered: ((String) -> Void)?
     

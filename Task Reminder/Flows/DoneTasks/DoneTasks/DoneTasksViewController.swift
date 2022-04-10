@@ -8,9 +8,9 @@
 
 import UIKit
 
-    /**
-     DoneTasks экран с выполненными задачами
-     */
+/**
+ DoneTasks экран с выполненными задачами
+ */
 class DoneTasksViewController: BaseViewController,
                                DoneTasksAssemblable,
                                WithNavigationItem {
@@ -44,7 +44,7 @@ class DoneTasksViewController: BaseViewController,
         tv.translatesAutoresizingMaskIntoConstraints = false
         return tv
     }()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -56,12 +56,12 @@ class DoneTasksViewController: BaseViewController,
         
         navController?.setNavigationBarHidden(false, animated: true)
         presenter?.onStart(animating: true)
-
+        
     }
     
     override func initUI() {
         title = "tab_done_tasks".localized
-
+        
         view.addSubviews(tableView)
         
     }
@@ -82,10 +82,15 @@ class DoneTasksViewController: BaseViewController,
             self?.presenter?.deleteAllTasks()
         }
     }
-
+    
     deinit {
         print("DoneTasksViewController is deinit")
     }
+}
+
+// MARK: - private methods
+
+extension DoneTasksViewController {
     
     @objc func callPullToRefresh() {
         presenter?.onStart(animating: false)
@@ -119,7 +124,7 @@ extension DoneTasksViewController: DoneTaskCellModelDelegate {
                 noTitle: "alert_a_no".localized,
                 onYes: { [weak self] in
                     self?.presenter?.onDoneTask(with: id)
-
+                    
                 },
                 onNo: {}
             )

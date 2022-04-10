@@ -9,7 +9,7 @@
 import UIKit
 
 final class AuthCoordinator: BaseCoordinator, AuthCoordinatorOutput {
-  
+    
     var finishFlow: CompletionBlock?
     
     private let factory: AuthFactory
@@ -38,7 +38,6 @@ private extension AuthCoordinator {
         let view = factory.makeAuthView()
         
         view.onCompletion = { [weak self] in
-//            self?.router.dismissModule()
             self?.finishFlow?()
         }
         

@@ -12,5 +12,6 @@ protocol AddTaskViewProtocol: BaseViewProtocol {
     
     var onCompletion: CompletionBlock? { get set }
     
+    /// задача добавлена
     var taskAdded: ((TaskModel) -> Void)? { get set }
 }

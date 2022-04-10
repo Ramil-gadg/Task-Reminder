@@ -9,13 +9,17 @@
 import UIKit
 
 final class AddTaskInteractor {
-
+    
     unowned var presenter: AddTaskPresenter?
     
-    var dataStore = DataStore.shared
-
+    var tasksDataService: TasksProviderProtocol
+    
+    init(with tasksProvider: TasksProviderProtocol = TasksProvider()) {
+        self.tasksDataService = tasksProvider
+    }
+    
     func saveTask(taskModel: TaskModel) {
-        dataStore.saveTaskModel(taskModel: taskModel) { [weak self] result in
+        tasksDataService.createTaskModel(taskModel: taskModel) { [weak self] result in
             switch result {
                 
             case .success(let task):

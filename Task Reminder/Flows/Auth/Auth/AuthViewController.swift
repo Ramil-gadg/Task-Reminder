@@ -96,7 +96,7 @@ class AuthViewController: BaseViewController,
     override func initConstraints() {
         mainView.translatesAutoresizingMaskIntoConstraints = false
         nextBtn.translatesAutoresizingMaskIntoConstraints = false
-                
+        
         NSLayoutConstraint.activate([
             scrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             scrollView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
@@ -115,7 +115,7 @@ class AuthViewController: BaseViewController,
             stackView.bottomAnchor.constraint(lessThanOrEqualTo: mainView.bottomAnchor),
             
             logoImg.heightAnchor.constraint(equalToConstant: 80),
-
+            
             nextBtn.heightAnchor.constraint(equalToConstant: 48)
         ])
     }
@@ -132,7 +132,7 @@ class AuthViewController: BaseViewController,
         }
         emailTF.shouldReturn = { [weak self] _ in
             self?.passwordTF.becomeFirstResponder()
-
+            
         }
         
         passwordTF.actionField = { [weak self] in
@@ -187,7 +187,7 @@ extension AuthViewController {
         self.emailTF.showErrorHint(message: message)
         self.passwordTF.showErrorHint(message: message)
     }
-
+    
     func setButtonEnabled(_ enabled: Bool) {
         nextBtn.alpha = enabled ? 1.0 : 0.5
     }

@@ -1,9 +1,7 @@
 //
 //  NavigationItemManager.swift
-//  delta-ohrana
 //
-//  Created by Sergey Nazarov on 11.01.2022.
-//  
+//
 //
 
 import UIKit
@@ -16,10 +14,10 @@ final class NavigationItemManager {
     
     enum NavigationItemButtonType: String {
         case back = "arrow_left"
-        case add
         case logout
         case settings
         case close
+        case add
         case clearAll
         
         var title: String {

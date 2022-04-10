@@ -1,6 +1,5 @@
 //
 //  MainCornersButton.swift
-
 //
 
 import UIKit

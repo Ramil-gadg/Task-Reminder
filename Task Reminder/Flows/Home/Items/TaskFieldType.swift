@@ -8,6 +8,7 @@
 import Foundation
 
 enum TaskFieldType {
+    
     case name
     case task
     case endDate

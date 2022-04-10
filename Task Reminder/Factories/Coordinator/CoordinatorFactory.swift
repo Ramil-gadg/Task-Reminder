@@ -1,9 +1,7 @@
 //
 //  CoordinatorFactory.swift
-//  delta-ohrana
 //
-//  Created by Sergey Nazarov on 11.01.2022.
-//  
+//
 //
 
 import UIKit
@@ -50,7 +48,7 @@ extension CoordinatorFactory: CoordinatorFactoryProtocol {
     }
     
     func makeHomeCoordinator(router: Routable,
-                              coordinatorFactory: CoordinatorFactoryProtocol
+                             coordinatorFactory: CoordinatorFactoryProtocol
     ) -> Coordinatable & HomeCoordinatorOutput {
         HomeCoordinator(
             with: modulesFactory,
@@ -60,7 +58,7 @@ extension CoordinatorFactory: CoordinatorFactoryProtocol {
     }
     
     func makeDoneTasksCoordinator(router: Routable,
-                              coordinatorFactory: CoordinatorFactoryProtocol
+                                  coordinatorFactory: CoordinatorFactoryProtocol
     ) -> Coordinatable & DoneTasksCoordinatorOutput {
         DoneTasksCoordinator(
             with: modulesFactory,

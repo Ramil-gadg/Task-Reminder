@@ -22,14 +22,14 @@ protocol EditTaskPresenterOutput: BasePresenterOutput {
     var presenter: EditTaskPresenterInput? { get set }
     
     var taskEdit: (() -> Void)? { get set }
-
+    
     func setTask(with task: TaskModel)
     func setButtonEnabled(enabled: Bool)
     
 }
 
 final class EditTaskPresenter {
-
+    
     weak var output: EditTaskPresenterOutput?
     
     var interactor: EditTaskInteractor?

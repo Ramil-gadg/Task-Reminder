@@ -9,11 +9,11 @@
 import UIKit
 
 final class HomeCoordinator: BaseCoordinator, HomeCoordinatorOutput {
-  
+    
     var finishFlow: CompletionBlock?
     
     private let factory: HomeFactory
-        
+    
     init(with factory: HomeFactory,
          router: Routable,
          coordinatorFactory: CoordinatorFactoryProtocol) {
